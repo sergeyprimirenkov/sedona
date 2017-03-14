@@ -1,0 +1,85 @@
+.reason2 {
+  background-color: $blue;
+}
+
+.reason2__wrapper {
+  @include container-fluid;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 37px;
+  text-align: center;
+  color: #fff;
+}
+
+.reason2__title {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.reason2__number {
+  display: block;
+}
+
+.reason2__number,
+.reason2__text {
+  font-size: 14px;
+}
+
+.reason2__text {
+  line-height: 22px;
+  padding-top: 11px;
+  margin: 0;
+}
+
+.reason2__photo {
+  min-height: 260px;
+  background-image: url(../../img/photo-bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media #{$tablet-width} {
+
+  .reason2 {
+    display: flex;
+    flex-wrap: nowrap;
+    //padding-bottom: 40px;
+  }
+
+  .reason2__wrapper {
+    order: 1;
+    width: 33%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .reason2__header {
+    padding: 45px 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .reason2__title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  .reason2__photo {
+    width: 67%;
+  }
+
+  .reason2__number {
+    margin-bottom: 8px;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .reason2__header {
+    padding-top: 54px;
+  }
+
+}

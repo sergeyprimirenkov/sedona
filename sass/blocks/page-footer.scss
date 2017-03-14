@@ -1,0 +1,87 @@
+.page-footer__wrapper {
+  @include container-fluid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.page-footer__title {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 21px;
+}
+
+.page-footer__social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.page-footer__logo {
+  position: relative;
+  top: 12px;
+  //left: 5px;
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  background-image: url(../../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -184px -116px;
+  &:hover {
+    background-position: -164px -160px;
+  }
+  &:active {
+    background-position: -201px -160px;
+  }
+}
+
+.page-footer__developer {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@media #{$tablet-width} {
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__title {
+    height: 18px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .page-footer__social-list {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    height: 48px;
+  }
+
+  .page-footer__developer {
+    display: inline-block;
+    vertical-align: text-top;
+    font-weight: normal;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page-footer__logo {
+    top: 8px;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  
+
+}

@@ -1,0 +1,32 @@
+html {
+  background-color: $lightgrey;
+}
+
+.page-body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 -10px 30px #d5d5d5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+br {
+  display: none;
+}
+
+@media #{$tablet-width} {
+  br {
+    display: block;
+  }
+}

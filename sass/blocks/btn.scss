@@ -1,0 +1,70 @@
+.btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $blue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $mblue;
+  }
+  &:active {
+    color: rgba(255, 255, 255, .3);
+    background-color: $dblue;
+  }
+  transition: all .3s linear;
+}
+
+.btn--social-link {
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  display: flex;
+  padding: 0;
+  margin-right: 6px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::before {
+    content: "";
+    display: block;
+    margin: auto;
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+  &-tw::before {
+    width: 19px;
+    height: 15px;
+    background-position: -273px -65px;
+  }
+  &-tw:active::before {
+    background-position: -35px -90px;
+  }
+  &-fb::before {
+    width: 9px;
+    height: 19px;
+    background-position: -142px -5px;
+  }
+  &-fb:active::before {
+    background-position: -161px -5px;
+  }
+  &-ytb::before {
+    width: 20px;
+    height: 14px;
+    background-position: -64px -90px;
+  }
+  &-ytb:active::before {
+    background-position: -94px -90px;
+  }
+}
+

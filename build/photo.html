@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sedona | Фото и видео</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
+</head>
+<body class="page-body">
+
+  <header class="page-header">
+  
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <a href="index.html"><img class="main-nav__logo  main-nav__logo--mobile" src="img/logotype-mobile.png" alt="Sedona">
+    </a>
+    <button class="main-nav__toggle"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">
+            <a>Фото и Видео</a>
+          </li>
+          <li class="main-nav__item">
+          <a id="main-nav__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+              <img class="main-nav__logo  main-nav__logo--tablet" src="img/logotype-mobile.png" alt="Sedona">
+            </picture>
+          </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="review.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__logo  page-header__logo--inner">
+    </div>
+  </header>
+
+  <main class="page-main">
+    
+    <section class="photo">
+      <div class="photo__wrapper">
+
+        <header class="photo__header">
+          <h1 class="photo__title">
+            Фото и видео
+          </h1>
+          <p class="photo__text">
+            Не можете решиться на путешествие из-за курса?<br>
+            Фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </header>
+
+        <div class="photo__list">
+          <article class="photo__item  photo__item--popular">
+            <div class="photo__item-photo">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+              <img src="img/photo-1-mobile.jpg" alt="Неродные просторы">
+            </picture>
+            </div>
+            <div class="photo__item-description">
+              <div class="photo__item-desc">
+                <h2 class="photo__item-title">
+                  Неродные просторы
+                </h2>
+                <b class="photo__item-author">
+                  Автор фото: Борис
+                </b>
+              </div>
+              <div class="photo__item-review">
+                <b class="photo__item-like">1350</b>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo__item">
+            <div class="photo__item-photo">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+              <img src="img/photo-2-mobile.jpg" alt="Местная растительность">
+            </picture>
+            </div>
+            <div class="photo__item-description">
+              <div class="photo__item-desc">
+                <h2 class="photo__item-title">
+                  Местная растительность
+                </h2>
+                <b class="photo__item-author">
+                  Автор фото: Сергей
+                </b>
+              </div>
+              <div class="photo__item-review">
+                <b class="photo__item-like">143</b>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo__item">
+            <div class="photo__item-photo">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+              <img src="img/photo-3-mobile.jpg" alt="Дорога на север">
+            </picture>
+            </div>
+            <div class="photo__item-description">
+              <div class="photo__item-desc">
+                <h2 class="photo__item-title">
+                  Дорога на север
+                </h2>
+                <b class="photo__item-author">
+                  Автор фото: Петр
+                </b>
+              </div>
+              <div class="photo__item-review">
+                <b class="photo__item-like">96</b>
+              </div>
+            </div>
+          </article>
+
+          <article class="photo__item">
+            <div class="photo__item-photo">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
+              <img src="img/photo-4-mobile.jpg" alt="Мост дьявола">
+            </picture>
+            </div>
+            <div class="photo__item-description">
+              <div class="photo__item-desc">
+                <h2 class="photo__item-title">
+                  Мост дьявола
+                </h2>
+                <b class="photo__item-author">
+                  Автор фото: Антон
+                </b>
+              </div>
+              <div class="photo__item-review">
+                <b class="photo__item-like" id="hui">254</b>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="photo__doubt">
+          <b class="photo__title">
+            Все еще сомневаетесь?
+          </b>
+          <p class="photo__text">
+            Смотрите видеопрезентацию и скорее за билетами,<br>
+            пока они не подорожали в очередной раз!
+          </p>
+        </div>
+        <div class="photo__movie">
+            <!--<picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+              <img src="img/video-mobile.jpg" alt="Мост дьявола">
+            </picture>-->
+            <video class="photo__movie" controls poster="img/video-desktop.jpg">
+              <source src="video/secret-sedona.mp4" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео
+            </video>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <b class="page-footer__title">
+        #VISITSEDONA
+      </b>
+      <div class="page-footer__social-list">
+        <a href="#" class="btn  btn--social-link  btn--social-link-tw">Мы в Twitter</a>
+        <a href="#" class="btn  btn--social-link  btn--social-link-fb">Мы в Facebook</a>
+        <a href="#" class="btn  btn--social-link  btn--social-link-ytb">Мы на Youtube</a>
+      </div>
+      <div class="page-footer__copyright">
+        <b class="page-footer__developer">Разработано</b>
+        <a href="https://htmlacademy.ru"><div class="page-footer__logo"></div></a>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/scripts.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ZJBurf8hwKGdZRXXX4yOBEQN6MjBUIo&callback=initMap"></script>
+
+</body>
+</html>

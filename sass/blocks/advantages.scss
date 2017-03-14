@@ -1,0 +1,129 @@
+.advantages {
+  
+}
+
+.advantages__wrapper {
+  @include container-fluid;
+  padding-top: 15px;
+  padding-bottom: 37px;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 70px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  &:last-child {
+    margin: 0;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+  &--home::before {
+    width: 39px;
+    height: 37px;
+    background-position: -184px -69px;
+  }
+  &--gift::before {
+    left: 25px;
+    width: 32px;
+    height: 38px;
+    background-position: -142px -69px;
+  }
+  &--burger::before {
+    top: 13px;
+    left: 18px;
+    width: 40px;
+    height: 35px;
+    background-position: -5px -5px;
+  }
+}
+
+.advantages__item-text {
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+@media #{$tablet-width} {
+
+  .advantages__wrapper {
+    padding-bottom: 48px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    padding-top: 140px;
+    margin: 0;
+    text-align: center;
+    &--home {
+      order: 1;
+    }
+    &--burger {
+      order: 2;
+    }
+    &--gift {
+      order: 3;
+    }
+    &::before {
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--home::before {
+      width: 75px;
+      height: 72px;
+      background-position: -79px -117px;
+    }
+    &--gift::before {
+      top: 37px;
+      width: 64px;
+      height: 75px;
+      background-position: -5px -117px;
+    }
+    &--burger::before {
+      top: 43px;
+      width: 77px;
+      height: 68px;
+      background-position: -55px -5px;
+    }
+  }
+
+  .advantages__item-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .advantages__item {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}

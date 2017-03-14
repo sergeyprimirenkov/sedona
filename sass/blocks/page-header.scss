@@ -1,0 +1,47 @@
+.page-header__logo {
+  @include corner;
+  width: 100%;
+  position: relative;
+  min-height: 389px;
+  background-image: url(../../img/text-index.png),
+                    url(../../img/bg-header.jpg);
+  background-repeat:  no-repeat, no-repeat;
+  background-position:  center, center;
+}
+
+.page-header__logo--inner {
+  min-height: 157px;
+  background-image: url(../../img/text-index-inner.png),
+                    url(../../img/bg-header.jpg);
+}
+
+@media #{$tablet-width} {
+
+  .page-header__logo {
+    @include corner-triangle;
+    min-height: 555px;
+    background-image: url(../../img/text-index-tablet.png),
+                      url(../../img/bg-header.jpg);
+    background-size: 460px 350px, cover;
+  }
+
+  .page-header__logo--inner {
+  min-height: 290px;
+  background-image: url(../../img/text-index-inner-tablet.png),
+                    url(../../img/bg-header.jpg);
+  background-size: 458px 78px, cover;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .page-header__logo {
+    @include corner-triangle-desktop;
+  }
+
+  .page-header__logo--inner {
+  min-height: 300px;
+  }
+
+}

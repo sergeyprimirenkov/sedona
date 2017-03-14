@@ -1,0 +1,44 @@
+.review {
+  background-color: #fff;
+}
+
+.review__wrapper {
+  @include container-fluid;
+}
+
+.review__header {
+  padding: 25px 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid $mgrey;
+}
+
+.review__title {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.review__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+@media #{$tablet-width} {
+
+  .review__header {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: none;
+  }
+
+  .review__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+}

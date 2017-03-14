@@ -1,0 +1,62 @@
+.interesting__wrapper {
+  @include container-fluid;
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.interesting__title {
+  font-size: 21px;
+}
+
+.interesting__text {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.interesting__map {
+  min-height: 350px;
+}
+
+.gmnoprint a, 
+.gmnoprint span, 
+.gm-style-cc {
+    display:none;
+}
+
+@media #{$tablet-width} {
+
+  .interesting__wrapper {
+    width: 460px;
+    padding: 0;
+    padding-top: 53px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .interesting__title {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .interesting__text {
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .interesting__wrapper {
+    padding-top: 75px;
+  }
+
+  .interesting__text {
+    padding-bottom: 45px;
+  }
+
+}

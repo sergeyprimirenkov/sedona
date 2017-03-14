@@ -1,0 +1,79 @@
+.reason1 {
+  background-color: $blue;
+}
+
+.reason1__wrapper {
+  @include container-fluid;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.reason1__header {
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+
+.reason1__text {
+  padding-top: 15px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.reason1__number {
+  display: block;
+  font-size: 14px;
+}
+
+.reason1__photo {
+  min-height: 260px;
+  background-image: url(../../img/photo-city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media #{$tablet-width} {
+
+  .reason1 {
+    display: flex;
+    flex-wrap: nowrap;
+    //padding-bottom: 40px;
+  }
+
+  .reason1__wrapper {
+    width: 33%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .reason1__title {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .reason1__header {
+    padding-top: 45px;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .reason1__text {
+    margin: 0;
+  }
+
+  .reason1__photo {
+    width: 67%;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .reason1__header {
+    padding-top: 52px;
+  }
+
+}
